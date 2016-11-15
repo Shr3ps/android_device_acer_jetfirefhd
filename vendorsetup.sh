@@ -1,2 +1,2 @@
-
-add_lunch_combo omni_freezerfhd-eng
+add_lunch_combo pac_freezerfhd-userdebug
+add_lunch_combo pac_freezerfhd-eng

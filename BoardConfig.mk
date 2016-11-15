@@ -1,6 +1,6 @@
 # Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := Aquaris_M10_FHD
+TARGET_BOOTLOADER_BOARD_NAME := Acer_A3-A40
 
 # Platform
 TARGET_BOARD_PLATFORM := mt8163
@@ -26,8 +26,8 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/bq/freezerfhd/kernel
-BOARD_MKBOOTIMG_ARGS := --pagesize 2048 --cmdline bootopt=64S3,32N2,64N2 --base 0x40078000 --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --second_offset 0x00e88000 --tags_offset 0x0df88000
+TARGET_PREBUILT_KERNEL := device/acer/jetfirefhd/kernel
+BOARD_MKBOOTIMG_ARGS := --pagesize 2048 --board 1469171623 --cmdline bootopt=64S3,32N2,64N2 --base 0x40078000 --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --second_offset 0x00e88000 --tags_offset 0x0df88000
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x1000000
@@ -43,7 +43,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 
 # TWRP-Specific
-TARGET_RECOVERY_FSTAB := device/bq/freezerfhd/recovery/etc/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/acer/jetfirefhd/recovery/etc/twrp.fstab
 BOARD_SUPPRESS_SECURE_ERASE := true
 TW_THEME := portrait_hdpi
 RECOVERY_TOUCHSCREEN_SWAP_XY := true

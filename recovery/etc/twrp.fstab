@@ -1,8 +1,11 @@
-/cache            ext4       /dev/block/mmcblk0p22
-/system           ext4       /dev/block/mmcblk0p21
-/system_image     emmc       /dev/block/mmcblk0p21
-/data             ext4       /dev/block/mmcblk0p23   length=-16384
-/boot             emmc       /dev/block/mmcblk0p8
-/recovery         emmc       /dev/block/mmcblk0p9
+# mount point   fstype          device                  [device2]
+/boot           emmc            boot
+/cache          ext4            /dev/block/mmcblk0p4
+/data           ext4            /dev/block/mmcblk0p5
+/misc           emmc            misc
+/recovery       emmc            recovery
+#/sdcard         vfat            /dev/block/mmcblk0p6
+/system         ext4            /dev/block/mmcblk0p3
+
 /external_sd      vfat       /dev/block/mmcblk1p1 /dev/block/mmcblk1  flags=display="External SD";storage;wipeingui;removable
 /usb-otg          vfat       /dev/block/sda1 /dev/block/sda           flags=display="USB OTG";storage;wipeingui;removable

@@ -1,4 +1,4 @@
-LOCAL_PATH := device/bq/freezerfhd
+LOCAL_PATH := device/acer/jetfirefhd
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
@@ -13,4 +13,4 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, build/target/product/full.mk)
 
-PRODUCT_NAME := freezerfhd
+PRODUCT_NAME := jetfirefhd

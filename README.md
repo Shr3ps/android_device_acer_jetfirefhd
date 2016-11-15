@@ -1,4 +1,4 @@
-TWRP device tree for the BQ Aquaris M10 FHD, aka freezerfhd
+TWRP device tree for the Acer A3-A40 FHD, aka jetfirefhd
 ========================================================
 
 For building TWRP only.
